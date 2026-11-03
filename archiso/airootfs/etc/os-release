@@ -1,0 +1,12 @@
+NAME="Core Linux"
+PRETTY_NAME="Core Linux"
+ID="coreos"
+ID_LIKE="arch"
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlatam.github.io/"
+DOCUMENTATION_URL="https://archlatam.github.io/"
+SUPPORT_URL="https://archlatam.github.io/"
+BUG_REPORT_URL="https://archlatam.github.io/"
+PRIVACY_POLICY_URL="https://archlatam.github.io/"
+LOGO="corelinux"

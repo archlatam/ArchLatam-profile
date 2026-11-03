@@ -1,0 +1,64 @@
+#!/bin/bash
+# archlatam-installer
+# Detecta UEFI/BIOS y GPU NVIDIA, ajusta el settings.conf de Calamares
+# (con o sin el módulo nvidiadrivers) y lanza el instalador.
+
+main() {
+    local progname="$(basename "$0")"
+    local log="/home/liveuser/archlatam-install.log"
+    local conf_dir="/etc/calamares"
+    local ISO_VERSION="$(cat /etc/version-tag 2>/dev/null || echo "desconocida")"
+
+    # --- Preparación del llavero ---
+    sudo gpgconf --homedir /etc/pacman.d/gnupg --kill all 2>/dev/null
+    sudo find /etc/pacman.d/gnupg -mindepth 1 -delete
+    sudo pacman-key --init
+    sudo pacman-key --populate archlinux
+    sudo pacman -Sy --noconfirm archlinux-keyring
+    sudo pacman-key --populate archlinux
+    timedatectl set-ntp true
+
+    # --- Detección de firmware ---
+    local FIRMWARE
+    if [ -d /sys/firmware/efi ]; then
+        FIRMWARE="UEFI"
+    else
+        FIRMWARE="BIOS/Legacy"
+    fi
+
+    # --- Detección de GPU NVIDIA (vendor ID 10de, clases VGA/3D/Display) ---
+    local GPU="no"
+    if lspci -nn -d 10de: | grep -Eqi 'VGA|3D controller|Display controller'; then
+        GPU="si"
+    fi
+
+    # --- Elección del settings (base: settings.conf sin NVIDIA) ---
+    local settings="${conf_dir}/settings.conf"
+    if [ "$GPU" = "si" ]; then
+        settings="${conf_dir}/settings_online_nvidia.conf"
+    fi
+
+    # --- Log ---
+    inxi -F > "$log"
+    cat <<EOF >> "$log"
+########## $log by $progname
+########## Started (UTC): $(date -u "+%x %X")
+########## ISO version: $ISO_VERSION
+########## Firmware: $FIRMWARE
+########## NVIDIA detectada: $GPU
+########## settings usado: $settings
+EOF
+
+    if [ ! -f "$settings" ]; then
+        echo "ERROR: no existe $settings" | tee -a "$log"
+        exit 1
+    fi
+
+    if [ "$GPU" = "si" ]; then
+        sudo cp "$settings" "${conf_dir}/settings.conf"
+    fi
+
+    exec pkexec-wrapper calamares -D6 >> "$log" 2>&1
+}
+
+main "$@"

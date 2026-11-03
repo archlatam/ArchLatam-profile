@@ -1,0 +1,9 @@
+{
+  "policies": {
+    "Homepage": {
+      "URL": "https://archlatam.github.io/",
+      "StartPage": "homepage"
+    },
+    "OverrideFirstRunPage": ""
+  }
+}

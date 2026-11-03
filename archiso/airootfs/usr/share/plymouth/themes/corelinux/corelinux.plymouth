@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Core Linux
+Description=Animación de arranque Core Linux
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/corelinux
+ScriptFile=/usr/share/plymouth/themes/corelinux/corelinux.script
