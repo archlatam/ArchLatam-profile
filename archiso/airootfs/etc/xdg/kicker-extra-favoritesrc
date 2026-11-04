@@ -1,3 +1,4 @@
 [General]
-Prepend=gparted.desktop;org.kde.konsole.desktop;archlatam-welcome.desktop;brave-origin.desktop
+Prepend=org.kde.konsole.desktop;gparted.desktop;org.kde.dolphin.desktop;brave-origin.desktop;archlatam-welcome.desktop;calamares.desktop
 IgnoreDefaults=true
+
