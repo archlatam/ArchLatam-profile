@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=ArchLatam Welcome
+Name[es]=Bienvenido a ArchLatam
+Name[pt]=Bem-vindo ao ArchLatam
+Comment=Welcome to the ArchLatam Live system
+Comment[es]=Bienvenida al sistema Live de ArchLatam
+Comment[pt]=Bem-vindo ao sistema Live do ArchLatam
+Exec=archlatam-welcome
+Icon=system-software-install
+Terminal=false
+Categories=System;
+StartupNotify=true

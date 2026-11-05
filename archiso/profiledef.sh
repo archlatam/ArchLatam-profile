@@ -30,5 +30,6 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/customize-profile.sh"]="0:0:755"
-  ["/etc/mkinitcpio.d/linux.preset"]="0:0:644"  
+  ["/etc/mkinitcpio.d/linux.preset"]="0:0:644"
+  ["/etc/skel/Desktop/archlatam-welcome.desktop"]="0:0:755"
 )

@@ -1,5 +1,2 @@
-[Favorites-org.kde.plasma.kickoff.favorites.instance-3-e2c55a05-4891-4ffa-96c8-f8c01853a136]
-ordering=applications:gparted.desktop,applications:org.kde.konsole.desktop,applications:archlatam-welcome.desktop,applications:brave-origin.desktop
-
-[Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
-ordering=applications:gparted.desktop,applications:org.kde.konsole.desktop,applications:archlatam-welcome.desktop,applications:brave-origin.desktop
+Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
+ordering=applications:systemsettings.desktop,applications:org.kde.dolphin.desktop,applications:brave-origin.desktop,applications:org.kde.konsole.desktop,applications:archlatam-welcome.desktop
