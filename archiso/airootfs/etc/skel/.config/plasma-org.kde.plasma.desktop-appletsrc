@@ -48,7 +48,6 @@ popupHeight=509
 popupWidth=647
 
 [Containments][2][Applets][3][Configuration][General]
-favoritesPortedToKAstats=true
 icon=/usr/share/icons/corelinux.png
 
 [Containments][2][Applets][4]
@@ -60,7 +59,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,applications:gparted.desktop,preferred://filemanager,applications:brave-origin.desktop,applications:archlatam-welcome.desktop
+launchers=applications:org.kde.konsole.desktop,applications:systemsettings.desktop,applications:gparted.desktop,preferred://filemanager,applications:brave-origin.desktop,applications:archlatam-welcome.desktop
 
 [Containments][2][Applets][6]
 immutability=1

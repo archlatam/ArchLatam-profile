@@ -1,0 +1,64 @@
+<!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd'>
+<Menu>
+ <Menu>
+  <Name>System</Name>
+  <Exclude>
+   <Filename>lstopo.desktop</Filename>
+   <Filename>calamares.desktop</Filename>
+  </Exclude>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+   <Menuname>ScreenSavers</Menuname>
+   <Menuname>Terminal</Menuname>
+   <Merge type="files"/>
+   <Filename>archlatam-welcome.desktop</Filename>
+   <Filename>org.kde.dolphin.desktop</Filename>
+   <Filename>gparted.desktop</Filename>
+   <Filename>org.kde.kinfocenter.desktop</Filename>
+   <Filename>org.kde.partitionmanager.desktop</Filename>
+   <Filename>org.kde.konsole.desktop</Filename>
+   <Filename>org.kde.kmenuedit.desktop</Filename>
+   <Filename>org.kde.plasma-systemmonitor.desktop</Filename>
+   <Filename>systemsettings.desktop</Filename>
+  </Layout>
+ </Menu>
+ <Menu>
+  <Name>.hidden</Name>
+  <Include>
+   <Filename>lstopo.desktop</Filename>
+   <Filename>qdbusviewer.desktop</Filename>
+   <Filename>linguist.desktop</Filename>
+   <Filename>designer.desktop</Filename>
+   <Filename>assistant.desktop</Filename>
+   <Filename>calamares.desktop</Filename>
+  </Include>
+ </Menu>
+ <Menu>
+  <Name>Development</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Translation</Menuname>
+   <Menuname>Web Development</Menuname>
+   <Merge type="files"/>
+   <Filename>org.kde.kate.desktop</Filename>
+   <Filename>micro.desktop</Filename>
+  </Layout>
+  <Exclude>
+   <Filename>assistant.desktop</Filename>
+   <Filename>qdbusviewer.desktop</Filename>
+   <Filename>linguist.desktop</Filename>
+   <Filename>designer.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>Help</Name>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>org.kde.kinfocenter.desktop</Filename>
+  </Layout>
+  <Exclude>
+   <Filename>assistant.desktop</Filename>
+  </Exclude>
+ </Menu>
+</Menu>

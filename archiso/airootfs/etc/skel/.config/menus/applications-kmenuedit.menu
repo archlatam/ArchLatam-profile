@@ -2,6 +2,10 @@
 <Menu>
  <Menu>
   <Name>System</Name>
+  <Exclude>
+   <Filename>lstopo.desktop</Filename>
+   <Filename>calamares.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
@@ -12,16 +16,12 @@
    <Filename>org.kde.dolphin.desktop</Filename>
    <Filename>gparted.desktop</Filename>
    <Filename>org.kde.kinfocenter.desktop</Filename>
-   <Filename>calamares.desktop</Filename>
    <Filename>org.kde.partitionmanager.desktop</Filename>
    <Filename>org.kde.konsole.desktop</Filename>
    <Filename>org.kde.kmenuedit.desktop</Filename>
    <Filename>org.kde.plasma-systemmonitor.desktop</Filename>
    <Filename>systemsettings.desktop</Filename>
   </Layout>
-  <Exclude>
-   <Filename>lstopo.desktop</Filename>
-  </Exclude>
  </Menu>
  <Menu>
   <Name>.hidden</Name>
@@ -31,6 +31,7 @@
    <Filename>linguist.desktop</Filename>
    <Filename>designer.desktop</Filename>
    <Filename>assistant.desktop</Filename>
+   <Filename>calamares.desktop</Filename>
   </Include>
  </Menu>
  <Menu>

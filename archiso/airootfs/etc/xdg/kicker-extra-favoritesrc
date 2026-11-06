@@ -1,0 +1,4 @@
+[General]
+Prepend=applications:org.kde.konsole.desktop;applications:org.kde.dolphin.desktop;applications:brave-origin.desktop;applications:archlatam-welcome.desktop;applications:systemsettings.desktop;applications:gparted.desktop
+IgnoreDefaults=true
+
