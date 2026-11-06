@@ -68,6 +68,7 @@ libfido2
 libusb-compat
 #libinput-gestures
 libwnck3
+libnotify
 linux-atm
 linux
 linux-firmware
@@ -193,4 +194,3 @@ calamares-config
 core-icons
 archlatam-welcome
 #core-settings-kde
-#core-wellcome
